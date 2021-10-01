@@ -1,0 +1,174 @@
+ul {
+   list-style: none;
+}
+li {
+   display: inline;
+   width: 25%;
+   position:relative;
+   font-size: 15px;
+   color: black;
+}
+
+ul li a:hover {
+   background-color: red;
+   color: white;
+   padding: 4px;
+}
+
+a {
+   text-decoration: none;
+   padding: 4px;
+}
+
+.relleno1 {
+   background-color: skyblue;
+   
+   height: 25px;
+}
+.relleno2 {
+   background-color: lightblue;
+   height: 65px;
+}
+
+.relleno3 {
+   background-color: green;
+   height: 65px;
+}
+
+div {
+  border: solid 1px black;
+  padding: 0px;
+  margin: 10px 8px 6px 5px;
+  display: inline-block;
+  font-size: 12px;
+  font-family: Arial;
+  width: 610px;
+  height: 100px;
+  overflow: hidden;
+  border-top:solid 5px red; 
+  border-right:solid 10px cyan;
+  border-bottom:solid 7px green;
+  border-left:solid 12px yellow;
+}
+
+
+
+
+.pie {
+color: gray;
+}
+
+.foto {
+height: 100px;
+width: 125px;
+}
+
+.aspectosfont {
+color: red;
+font-style: italic;
+font-weight: bold;
+font-size: 30px;
+font-family: "Comic Sans MS", sans-serif;
+text-align: center;
+line-height: 2;
+text-decoration: underline;
+}
+
+.container {
+   margin: 30px 0px;
+   width: 1300px;
+
+}
+
+.borde {
+  border: solid 2px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+.order {
+
+   order: -2;
+
+}   
+
+.azul {
+  background: blue;
+  border-top:solid 5px black; 
+  border-right:solid 5px black;
+  border-bottom:solid 5px black;
+  border-left:solid 5px black;
+}
+
+.rojo {
+  background: red;
+  border-top:solid 5px black; 
+  border-right:solid 5px black;
+  border-bottom:solid 5px black;
+  border-left:solid 5px black;
+}
+
+.negro {
+  background: black;
+  border-top:solid 5px black; 
+  border-right:solid 5px black;
+  border-bottom:solid 5px black;
+  border-left:solid 5px black;
+}
+.cuadrado {
+  margin: 10px 10px;
+  height: 70px;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+  grid-template-rows: 100px 1fr 1fr 75px;
+  grid-template-columns: 20% auto 15%;
+
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  
+  height: 100vh;
+  margin: 0;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+section#productos {
+  grid-area: productos;
+}
+
+section#servicios {
+  grid-area: servicios;
+}
+
+nav {
+  grid-area: nav;
+}
+
+aside {
+  grid-area: publicidad;
+}
